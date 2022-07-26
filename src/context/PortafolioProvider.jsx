@@ -10,7 +10,6 @@ const PortafolioProvider = ({children}) => {
 	const [skills, setSkills] = useState([]);
 	const [profile, setProfile] = useState([]);
 
-	console.log('isOpenModalProyectos', isOpenModalProyectos)
 
 	const handleModalProyectos = (details=false, _proyectoItem={}) => {
 		setIsOpenModalProyectos(!isOpenModalProyectos)
@@ -35,7 +34,6 @@ const PortafolioProvider = ({children}) => {
 			.then(data=>{
 				setTimeout(() => {
 					setProyectos(data[0].projects)
-					//console.log(data[0].profile)
 					setSkills(data[0].skills[0]),
 					setProfile(data[0].profile)
 					
