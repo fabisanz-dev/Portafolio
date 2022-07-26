@@ -23,7 +23,6 @@ const Proyectos = () => {
       }
     };
     changePage();
-    console.log("proyec, page, pagecount", proyectos.length, page, pageCount);
   }, [proyectos, page]);
 
   //paginacion pa

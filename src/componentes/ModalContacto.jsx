@@ -130,7 +130,6 @@ export default function ModalContacto() {
   };
 
   const handleToast = () => {
-    console.log("handleToast--------");
     setEmailSended("");
   };
 
