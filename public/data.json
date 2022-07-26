@@ -1,0 +1,149 @@
+[
+  {
+    "profile": {
+      "name": "Fabian Jorge Sanchez",
+      "email": "moodynolan@uxmox.com",
+      "about": "Licenciado en sistemas de información y analista programador. \nMe especializo en el desarollo de aplicaciones web.\r\n",
+      "linkedin": "https://www.linkedin.com/in/fabian-sanchez-j/",
+      "github": "https://github.com/fabisanz-dev"
+    },
+    "skills": [{
+      "enviroment": [
+        {"type": "Frontend", "level": 45},
+        {"type": "Backend", "level": 55}
+      ],
+      "technologies":[
+        { "type": "JavaScript", "level": 70 },
+        { "type": "CSS", "level": 60 },
+        { "type": "PHP", "level": 60 },
+        { "type": "React", "level": 61 },
+        { "type": "Angular", "level": 45 },
+        { "type": "NodeJs", "level": 61 },
+        { "type": "Laravel", "level": 45 },
+        { "type": "GIT", "level": 55 },
+        { "type": "NoSQL", "level": 45 },
+        { "type": "SQL", "level": 60 }
+      ]
+    }],
+    "projects": [
+      {
+        "id": 0,
+        "name": "UpTask",
+        "description": "Aplicación para gestionar proyectos y tareas con adición de colaboradores registrados, incluyendo: \nregistro/login con confirmación de correo, paginación, buscador, actuaización de imagen de perfil, etc... \nEs un proyecto a modo práctico basado en el curso de React de Juan Pablo De la torre Valdez en Udemy.",
+        "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658260058/My_jobs/F_sanz/mern_uptask/2022-07-19_16_46_52-Uptask_-_inicio_resp.png",
+        "details": true,
+        "details_image": [
+          {
+            "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658241091/My_jobs/F_sanz/mern_uptask/Video_1658149310.gif",
+            "title": "Actualizar-Perfil",
+            "description": "Actualizando imagen del usuario."
+          },
+          {
+            "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658240828/My_jobs/F_sanz/mern_uptask/crud_proyectos.gif",
+            "title": "gestion-proyectos",
+            "description": "Gestionando Proyectos"
+          },
+          {
+            "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658240823/My_jobs/F_sanz/mern_uptask/crud_tareas_pag.gif",
+            "title": "gestion-tareas",
+            "description": "Gestionando Tareas"
+          },
+          {
+            "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658240772/My_jobs/F_sanz/mern_uptask/agregar_colaborador.gif",
+            "title": "agregar-colaborador",
+            "description": "Agregando usuario colaborador al proyecto."
+          },
+          {
+            "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658240805/My_jobs/F_sanz/mern_uptask/Video_buscador_proyectos.gif",
+            "title": "buscador-proyectos",
+            "description": "Buscando proyectos."
+          }
+        ],
+        "tags": ["NodeJs-Express", "MongoDb", "SocketIO", "ReactJs", "TaildWindCss"],
+        "link": "https://helpful-genie-76ba1c.netlify.app/"
+      },
+      {
+        "id": 1,
+        "name": "CodePlex",
+        "description": "Proyecto de ventas multi-sucursal. Desarrolle y di soporte en algunos modulos, entre ellos: gestión de usuarios, registro y logueo, generación de reportes en formato: pdf, envio de correos para los reportes generados, etc...",
+        "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658250239/My_jobs/F_sanz/rafael_l/formulario_ventas.png",
+        "details": true,
+        "details_image":[
+          {
+            "image" : "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658249688/My_jobs/F_sanz/rafael_l/reporte_pdf_angular.gif",
+            "title" : "Reporte de venta",
+            "description": "Reporte de venta, formato: pdf "
+          },
+          {
+            "image" : "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658250239/My_jobs/F_sanz/rafael_l/formulario_ventas.png",
+            "title" : "Gestion_venta",
+            "description": "Getión de venta"
+          },
+          {
+            "image" : "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658249696/My_jobs/F_sanz/rafael_l/importacion_excel_data_sin_errores___.gif",
+            "title" : "excel_a_sistema",
+            "description": "Carga de datos desde archivo Excel"
+          },
+          {
+            "image" : "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658373304/My_jobs/F_sanz/rafael_l/gestion_usuario_empresas.gif",
+            "title" : "gestion_usuario_empresas",
+            "description": "Gestión de usuarios y Empresas"
+          }
+        ],
+        "tags": ["PHP-Lumen", "Mysql", "Angular", "Bootstrap", "Firebase Auth"]
+      },
+      {
+        "id": 2,
+        "name": "Tienda virtual Angular",
+        "description": "Proyecto de tienda virtual con fines prácticos.",
+        "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1537910705/My_jobs/F_sanz/Angular/Tiendangfirebase.gif",
+        "details": false,
+        "tags": ["Angular", "Firebase"]
+      },
+      {
+        "id": 3,
+        "name": "LexRay",
+        "description": "PLataforma de operaciones moviles. Desarrollo y soporte de algunos modulos de usuario y localizaciones.",
+        "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658375828/My_jobs/F_sanz/santiago_a/2019-03-18_10_22_06-LexRay_Admin.png",
+        "details": true,
+        "details_image":[
+          {
+            "image" : "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658250870/My_jobs/F_sanz/santiago_a/2019-03-21_15_08_39-Window.png",
+            "title" : "estado-usuarios",
+            "description": "Estados de usuarios: activos/anulados"
+          },
+          {
+            "image" : "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658250867/My_jobs/F_sanz/santiago_a/2019-03-26_12_38_24-Window.png",
+            "title" : "busqueda_usuarios",
+            "description": "Correciones en la busqueda de usuarios"
+          },
+          {
+            "image" : "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658250866/My_jobs/F_sanz/santiago_a/2019-02-13_14_42_08-Window.png",
+            "title" : "reporte_paginacion",
+            "description": "Correciones en la busqueda y paginación para reportes"
+          }
+        ],
+        "tags": ["NodeJs-Express", "MongoDb", "Angular", "Ionic", "ElectronJs"]
+      },
+      {
+        "id": 5,
+        "name": "FElectronica",
+        "description": "Maquetado inicial de la aplicación, con menú multinivel, gestión de usuarios y de roles respectivos.",
+        "image": "https://drive.google.com/uc?id=17OW2gEj4KpVt7KCTbQuuC19bkSodBUU7",
+        "details": false,
+        "tags": ["Angular", "Firebase Auth"]
+      },
+      {
+        "id": 6,
+        "name": "Tienda virtual Ionic",
+        "description": "Proyecto de tienda virtual con fines prácticos.",
+        "image": "https://drive.google.com/uc?id=1eDza15dT5RY5ijQr2FAp3z9Attf-Ya3Q",
+        "details": false,
+        "tags": ["Ionic", "Angular"]
+      }
+    ],
+
+    "greeting": "Hello, Moody Nolan! You have 9 unread messages.",
+    "favoriteFruit": "banana"
+  }
+]

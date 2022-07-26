@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.skillbar-percent{
+	color: #45484a!important;
+}
+
+
+
+[data-testid="tooltip"]  {
+    z-index: 99999;
+}
+
+.w-fit>button{
+	background-color: #76a4a5!important;
+	border-color: #c8dede!important;
+}
+.w-fit>button:focus{
+	outline: none!important;
+	border-color: #c8dede!important;
+}
+.w-fit>button:hover{
+	outline: none!important;
+}
+
+.active{
+	background-color: red!important;
+}
+
+[data-testid="flowbite-card"]  {
+    background-color: transparent!important;
+	border-color: #c8dede!important;
+}
+._3z8Zf::after {
+	content: "S";
+    color: rgb(71 85 105 / var(--tw-text-opacity));
+};
+
+
+
