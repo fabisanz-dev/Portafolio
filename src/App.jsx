@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { PortafolioProvider } from "./context/PortafolioProvider";
-import Layout from "./layouts/layout";
+import Layout from "./layouts/Layout";
 import Experiencia from "./paginas/Experiencia";
 import Habilidades from "./paginas/Habilidades";
 import Home from "./paginas/Home";
