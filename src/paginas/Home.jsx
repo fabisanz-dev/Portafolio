@@ -11,6 +11,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import ModalContacto from "../componentes/ModalContacto";
 import usePortafolio from "../hooks/usePortafolio";
 import { useState } from "react";
+import imgPresentacion from '../presentacion_image.png'
 
 
 const Home = () => {
@@ -38,7 +39,7 @@ const Home = () => {
                 placement="bottom"
               >
               <img
-                src="https://res.cloudinary.com/dftu7s8cf/image/upload/v1658526534/My_jobs/F_sanz/profile/Code_typing-bro_recortad.png"
+                src={imgPresentacion}
                 alt="img-presentacion"
               />
               </Tooltip>

@@ -3,12 +3,16 @@ import usePortafolio from "../hooks/usePortafolio";
 import Proyecto from "../componentes/proyecto";
 import { Pagination } from "flowbite-react";
 import { useEffect, useState } from "react";
+import {
+  BackspaceIcon
+} from "@heroicons/react/solid";
 
 const Proyectos = () => {
-  const { handleModalProyectos, proyectos } = usePortafolio();
+  const { handleModalProyectos, proyectos, page, setPage, filterTags, tags } =
+    usePortafolio();
   //paginations
   const ITEMS_PER_PAGE = 2;
-  const [page, setPage] = useState(1);
+  //const [page, setPage] = useState(1); cambiado a provider por filtrado: tag
   const [pageCount, setPageCount] = useState(1);
 
   const limit = page * ITEMS_PER_PAGE;
@@ -20,9 +24,12 @@ const Proyectos = () => {
       if (proyectos.length > 0) {
         setItems(proyectos.slice(from, limit));
         setPageCount(Math.ceil(proyectos.length / ITEMS_PER_PAGE));
+
       }
     };
+   
     changePage();
+
   }, [proyectos, page]);
 
   //paginacion pa
@@ -40,14 +47,50 @@ const Proyectos = () => {
     });
   }
 
+  const handleTitleTag = ({remove=false, val=""}) => {
+    if(remove){
+     // console.log('handleTitleTag', val)
+      filterTags("", {remove: true, value: val});
+      return
+    }
+
+    filterTags("", {remove: false, value: ""});
+  };
+
   return (
     <>
+      {tags.length > 0 && (
+        <div className="flex sm:justify-between flex-col p-1 items-center">
+          <h3 className="text-lg font-bold flex">
+            Filtros con #Tags 
+            <span>
+              <a
+                href="#"
+                onClick={handleTitleTag}
+                className=""
+              >
+                <BackspaceIcon className="h-6 w-6 text-red-700 hover:text-red-800" />
+              </a>
+            </span>
+          </h3>
+
+          <div className="flex gap-1 flex-wrap text-xs text-blue-pastel-300 hover:text-blue-pastel-200 font-bold justify-center mt-1">
+            {/* <p className="text-lg">
+            Proyectos realizados con<span className="font-bold font-mono text-blue-pastel-300 text-sm"> #{tag.length}.&nbsp;</span>
+          </p> */}
+            {tags.map((t, index) => (
+              <p key={index} onClick={()=>handleTitleTag({remove:true, val:t})} className="cursor-pointer border rounded-lg p-1">#{t}</p>
+            ))}
+          </div>
+        </div>
+      )}
+
       {proyectos.length > 0 ? (
         <div className="flex flex-col gap-4 items-start">
           {items.map((proyecto, i) => (
             <Proyecto key={proyecto.id} proyecto={proyecto} />
           ))}
-          <hr className="border border-blue-pastel-100 w-full"/>
+          <hr className="border border-blue-pastel-100 w-full" />
           {/*** Paginacion ***/}
           <div className="flex flex-col items-center justify-center m-auto">
             <span className="text-sm text-gray-700">
@@ -63,9 +106,7 @@ const Proyectos = () => {
             <div className="inline-flex mt-2 xs:mt-0">
               <button
                 className={`py-2 px-4 text-sm font-medium text-white rounded-l border-blue-pastel-300 bg-blue-pastel-300 hover:bg-blue-pastel-200 
-                ${
-               page === 1 && "opacity-25"
-             }`}
+                ${page === 1 && "opacity-25"}`}
                 onClick={handlePrevious}
                 disabled={page === 1}
               >
@@ -88,13 +129,10 @@ const Proyectos = () => {
                   })}
               </select>
 
-
               <button
                 className={`ml-1 py-2 px-4 text-sm font-medium text-white 
            rounded-r border-0 border-l border-blue-pastel-300 bg-blue-pastel-300 hover:bg-blue-pastel-200 
-           ${
-            page === pageCount && "opacity-25"
-          }`}
+           ${page === pageCount && "opacity-25"}`}
                 disabled={page === pageCount}
                 onClick={handleNext}
               >

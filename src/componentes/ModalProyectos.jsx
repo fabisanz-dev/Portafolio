@@ -2,12 +2,17 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Button, Carousel, Tooltip, Toast } from "flowbite-react";
 import { Fragment, useEffect, useState } from "react";
 import usePortafolio from "../hooks/usePortafolio";
+
 import {
   XCircleIcon,
   InformationCircleIcon,
   ArrowLeftIcon,
   ArrowRightIcon,
+  LinkIcon,
+  ExternalLinkIcon
 } from "@heroicons/react/solid";
+
+import placeHolderImg from "../placeholder_image.png";
 
 export default function ModalProyectos() {
   const {
@@ -21,7 +26,7 @@ export default function ModalProyectos() {
   const [btnInfo, setBtnInfo] = useState(false);
 
   // mostrar ocultar boton de info con su mensaje
-  const handleInfo = (textInfo='') => {
+  const handleInfo = (textInfo = "") => {
     setBtnInfo(!btnInfo);
     textInfo && setTextInfo(textInfo);
   };
@@ -34,6 +39,12 @@ export default function ModalProyectos() {
   const limit = page * ITEMS_PER_PAGE;
   const from = limit - ITEMS_PER_PAGE;
   const [items, setItems] = useState([]);
+
+  //imageStatus
+  const [imageStatus, setImageStatus] = useState("cargando");
+  const handleImgLoaded = () => {
+    setImageStatus("loaded");
+  };
 
   useEffect(() => {
     const changePage = () => {
@@ -123,9 +134,14 @@ export default function ModalProyectos() {
                             >
                               <div className="flex justify-center">
                                 <img
-                                  src={detail.image}
+                                  src={
+                                    imageStatus === "loaded"
+                                      ? detail.image
+                                      : placeHolderImg
+                                  }
                                   alt={detail.title}
                                   className="w-full h-auto"
+                                  onLoad={handleImgLoaded}
                                 />
                               </div>
 
@@ -157,9 +173,7 @@ export default function ModalProyectos() {
                               <button
                                 className={`p-2 rounded-full bg-blue-pastel-300 border-blue-pastel-100
                                 hover:bg-blue-pastel-200 
-                                 ${
-                                  (page === 1 || btnInfo) && "opacity-25"
-                                }`}
+                                 ${(page === 1 || btnInfo) && "opacity-25"}`}
                                 onClick={handlePrevious}
                                 disabled={page === 1 || btnInfo}
                               >
@@ -190,12 +204,20 @@ export default function ModalProyectos() {
                           </div>
                         </>
                       ) : (
-                        <div className="border h-auto aspect-w-16 aspect-h-9 w-auto">
+                        <div className="border h-auto w-auto">
                           <img
-                            src={proyectoItem.image}
+                            src={imageStatus === "loaded" ? proyectoItem.image : placeHolderImg}
                             alt={proyectoItem.name}
-                            className="grow"
+                            className="grow w-full"
+                            onLoad={handleImgLoaded}
                           />
+                          <a
+                            href={proyectoItem.image}
+                            className="rounded-2xl border-sky-600 border bg-slate-200 absolute bottom-8 left-1/2 z-10"
+                            target="_blank"
+                          >
+                           <ExternalLinkIcon className="h-6 w-6 text-sky-600 hover:text-sky-700 p-1" />
+                          </a>
                         </div>
                       )}
                     </div>
