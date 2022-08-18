@@ -7,7 +7,7 @@ import placeHolderImg from "../placeholder_image.png";
 
 const Proyecto = ({ proyecto }) => {
   const { name, description, image, details, tags } = proyecto;
-  const { handleModalProyectos, filterTags } = usePortafolio();
+  const { handleModalProyectos, filterTags, tags: collectionTags } = usePortafolio();
   const [imageStatus, setImageStatus] = useState("cargando");
 
   const handleImgLoaded = () => {
@@ -66,8 +66,8 @@ const Proyecto = ({ proyecto }) => {
             <div className="flex flex-wrap md:mt-auto text-xs text-slate-600  border-t border-blue-pastel-100">
               {tags?.map((tag, i) => (
                 <p key={i} className="p-1 hover:text-blue-pastel-300 cursor-pointer">
-                  <span className="font-bold text-sm  ">#</span>
-                  <a href="#" onClick={handleTag}>{tag}</a> 
+                  <span className={`${collectionTags.includes(tag) ? 'text-blue-pastel-300 cursor-default' : ''} font-bold text-sm`}>#</span>
+                  <a href="#" onClick={handleTag} className={`${collectionTags.includes(tag) ? 'text-blue-pastel-300 cursor-default' : ''}`}>{tag}</a> 
                 </p>
               ))}
             </div>

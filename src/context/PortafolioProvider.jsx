@@ -16,6 +16,7 @@ const PortafolioProvider = ({children}) => {
 	const [page, setPage] = useState(1);
 	const location = useLocation();
 	const prev = useRef({ tags, page });
+	const [cargando, setCargando] = useState(false)
 
 
 	const handleModalProyectos = (details=false, _proyectoItem={}) => {
@@ -40,6 +41,7 @@ const PortafolioProvider = ({children}) => {
 				   }
 			})
 			
+			setCargando(true)
 			const data = await result.json()
 
 			setTimeout(() => {
@@ -47,6 +49,7 @@ const PortafolioProvider = ({children}) => {
 				setSkills(data[0].skills[0]),
 				setProfile(data[0].profile)
 				setPage(1)
+				setCargando(false)
 			}, 1000); 
 
 		}
@@ -54,7 +57,7 @@ const PortafolioProvider = ({children}) => {
 		
 		if(tags.length > 0){
 			//return
-			//setProyectos([])
+			setCargando(true)
 			fetch('data.json', {
 				headers : { 
 					'Content-Type': 'application/json',
@@ -80,6 +83,7 @@ const PortafolioProvider = ({children}) => {
 					//console.log(newData)
 					setProyectos(newData)
 					setPage(1)
+					setCargando(false)
 				}, 1000); 
 				
 			})
@@ -100,6 +104,8 @@ const PortafolioProvider = ({children}) => {
 	 * @returns ['NodeJs', 'TaildwindCss', 'reacJs']
 	 */
 	const filterTags = async(_tag="", {remove=false, value=""}) => {
+		// console.log(_tag, typeof _tag)
+
 		if(_tag){
 			if(tags.includes(_tag)){
 				return
@@ -136,6 +142,7 @@ const PortafolioProvider = ({children}) => {
 				tags,
 				page,
 				setPage,
+				cargando
 			}}
 		>
 			{children}
