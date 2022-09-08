@@ -33,7 +33,7 @@ const Sidebar = () => {
         </Dropdown>
       </div>
       {/**menu normal */}
-      <div className="justify-center mt-1 md:visible hidden md:flex">
+      <div className="md:flex md:justify-center md:flex-col items-center mt-1 md:visible hidden">
         <ul className="w-48 text-sm font-medium text-blue-pastel-100 bg-blue-pastel-200  text-center mt-1 uppercase">
           <NavLink
             to="/"
@@ -65,7 +65,7 @@ const Sidebar = () => {
           </NavLink>
         </ul>
       </div>
-
+      
     </aside>
   );
 };
