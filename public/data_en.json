@@ -3,22 +3,30 @@
     "profile": {
       "name": "Fabian Jorge Sanchez",
       "email": "moodynolan@uxmox.com",
-      "about": "Licenciado en sistemas de información y analista programador. \nMe especializo en el analisis y desarollo de aplicaciones web.\r\n",
+      "about": "Degree in information systems and programmer analyst. Specialty in analysis and development of web apps",
       "linkedin": "https://www.linkedin.com/in/fabian-sanchez-j/",
       "github": "https://github.com/fabisanz-dev"
     },
+    "skills": [
+      {
+        "enviroment": [
+          { "type": "Frontend", "level": 45 },
+          { "type": "Backend", "level": 55 }
+        ]
+      }
+    ],
     "projects": [
       {
         "id": 0,
         "name": "Pigmeo Mern",
-        "description": "Webapp móvil de una billetera virtual para gestión de finanzas y transacciones.\nProyecto grupal realizado en la organización: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
+        "description": "Mobile webapp of a virtual wallet for financial and transaction management.\nGroup project carried out in the organization: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
         "image": "https://img.youtube.com/vi/UJ5vFleryLM/hqdefault.jpg",
         "details": true,
         "details_image": [
           {
             "image": "https://www.youtube.com/embed/UJ5vFleryLM",
-            "title": "Video-promocional",
-            "description": "Video promocional"
+            "title": "Video-promotional",
+            "description": "Promotional video"
           }
         ],
         "tags": ["NodeJs-Express", "ReactJs", "TaildWindCss", "MongoDb"],
@@ -27,14 +35,14 @@
       {
         "id": 1,
         "name": "Consultorio Mern",
-        "description": "Sistema web para gestionar turnos de medicos y pacientes.\nProyecto grupal realizado en la organización: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
+        "description": "Web-based appointment management system with physicians and patients.\nGroup project carried out in the organization: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
         "image": "https://media.discordapp.net/attachments/1089874433637888030/1098988014845317120/Home.jpg",
         "details": true,
         "details_image": [
           {
             "image": "https://www.youtube.com/embed/-Ngdzem81a0",
-            "title": "Video-promocional",
-            "description": "Video promocional"
+            "title": "Video-promotional",
+            "description": "Promotional video"
           }
         ],
         "tags": ["NodeJs-Express", "ReactJs", "TaildWindCss", "MongoDb"],
@@ -43,34 +51,34 @@
       {
         "id": 2,
         "name": "UpTask",
-        "description": "Aplicación para gestionar proyectos y tareas con adición de colaboradores registrados, incluyendo: \nregistro/login con confirmación de correo, paginación, buscador, actuaización de imagen de perfil, etc... \nEs un proyecto a modo práctico basado en el curso de React de Juan Pablo De la torre Valdez en Udemy.",
+        "description": "Application to manage projects and tasks with addition of registered collaborators, including: \nregistration/login with mail confirmation, pagination, search engine, profile image update, etc... \nThis is a practical project based on Juan Pablo De la torre Valdez's React course on Udemy.",
         "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658260058/My_jobs/F_sanz/mern_uptask/2022-07-19_16_46_52-Uptask_-_inicio_resp.png",
         "details": true,
         "details_image": [
           {
             "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658241091/My_jobs/F_sanz/mern_uptask/Video_1658149310.gif",
-            "title": "Actualizar-Perfil",
-            "description": "Actualizando imagen del usuario."
+            "title": "Update Profile",
+            "description": "Updating user image."
           },
           {
             "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658240828/My_jobs/F_sanz/mern_uptask/crud_proyectos.gif",
-            "title": "gestion-proyectos",
-            "description": "Gestionando Proyectos"
+            "title": "Project-Management",
+            "description": "Managing Projects"
           },
           {
             "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658240823/My_jobs/F_sanz/mern_uptask/crud_tareas_pag.gif",
-            "title": "gestion-tareas",
-            "description": "Gestionando Tareas"
+            "title": "Task-Management",
+            "description": "Managing Tasks"
           },
           {
             "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658240772/My_jobs/F_sanz/mern_uptask/agregar_colaborador.gif",
-            "title": "agregar-colaborador",
-            "description": "Agregando usuario colaborador al proyecto."
+            "title": "Add-collaborator",
+            "description": "Adding a collaborating user to the project."
           },
           {
             "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658240805/My_jobs/F_sanz/mern_uptask/Video_buscador_proyectos.gif",
-            "title": "buscador-proyectos",
-            "description": "Buscando proyectos."
+            "title": "project-search-engine",
+            "description": "Looking for projects."
           }
         ],
         "tags": [
@@ -84,37 +92,37 @@
       {
         "id": 3,
         "name": "CodePlex",
-        "description": "Proyecto de ventas multi-sucursal. Desarrolle y di soporte en algunos modulos, entre ellos: gestión de usuarios, registro y logueo, generación de reportes en formato: pdf, envio de correos para los reportes generados, etc...",
+        "description": "Multi-branch sales project. I developed and gave support in some modules, among them: user management, registration and login, report generation in pdf format, sending emails for the generated reports, etc...",
         "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658250239/My_jobs/F_sanz/rafael_l/formulario_ventas.png",
         "details": true,
         "details_image": [
           {
             "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658249688/My_jobs/F_sanz/rafael_l/reporte_pdf_angular.gif",
-            "title": "Reporte de venta",
-            "description": "Reporte de venta, formato: pdf "
+            "title": "Sales-report",
+            "description": "Sales report, format: pdf"
           },
           {
             "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658250239/My_jobs/F_sanz/rafael_l/formulario_ventas.png",
-            "title": "Gestion_venta",
-            "description": "Getión de venta"
+            "title": "Sales_management",
+            "description": "Sales management"
           },
           {
             "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658249696/My_jobs/F_sanz/rafael_l/importacion_excel_data_sin_errores___.gif",
-            "title": "excel_a_sistema",
-            "description": "Carga de datos desde archivo Excel"
+            "title": "excel_to_system",
+            "description": "Loading data from Excel file."
           },
           {
             "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658373304/My_jobs/F_sanz/rafael_l/gestion_usuario_empresas.gif",
-            "title": "gestion_usuario_empresas",
-            "description": "Gestión de usuarios y Empresas"
+            "title": "user_management_companies",
+            "description": "User and company managment"
           }
         ],
         "tags": ["PHP-Lumen", "Mysql", "Angular", "Bootstrap", "Firebase Auth"]
       },
       {
         "id": 4,
-        "name": "Tienda virtual Angular",
-        "description": "Proyecto de tienda virtual con fines prácticos.",
+        "name": "Angular online store",
+        "description": "Virtual store project for practical purposes.",
         "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1537910705/My_jobs/F_sanz/Angular/Tiendangfirebase.gif",
         "details": false,
         "tags": ["Angular", "Firebase"]
@@ -122,24 +130,24 @@
       {
         "id": 5,
         "name": "LexRay",
-        "description": "PLataforma de operaciones moviles. Desarrollo y soporte de algunos modulos de usuario y localizaciones.",
+        "description": "Mobile operations platform. Development and support of some user modules and localizations.",
         "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658375828/My_jobs/F_sanz/santiago_a/2019-03-18_10_22_06-LexRay_Admin.png",
         "details": true,
         "details_image": [
           {
             "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658250870/My_jobs/F_sanz/santiago_a/2019-03-21_15_08_39-Window.png",
-            "title": "estado-usuarios",
-            "description": "Estados de usuarios: activos/anulados"
+            "title": "state-users",
+            "description": "User statuses: active/cancelled."
           },
           {
             "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658250867/My_jobs/F_sanz/santiago_a/2019-03-26_12_38_24-Window.png",
-            "title": "busqueda_usuarios",
-            "description": "Correciones en la busqueda de usuarios"
+            "title": "user-search",
+            "description": "Corrections in the user search"
           },
           {
             "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658250866/My_jobs/F_sanz/santiago_a/2019-02-13_14_42_08-Window.png",
-            "title": "reporte_paginacion",
-            "description": "Correciones en la busqueda y paginación para reportes"
+            "title": "report_pagination",
+            "description": "Search and pagination fixes for reports"
           }
         ],
         "tags": ["NodeJs-Express", "MongoDb", "Angular", "Ionic", "ElectronJs"]
@@ -147,7 +155,7 @@
       {
         "id": 6,
         "name": "FElectronica",
-        "description": "Maquetado inicial de la aplicación, con menú multinivel, gestión de usuarios y de roles respectivos.",
+        "description": "Initial layout of the application, with multilevel menu, user management and respective roles.",
         "image": "https://drive.google.com/uc?id=17OW2gEj4KpVt7KCTbQuuC19bkSodBUU7",
         "details": false,
         "tags": ["Angular", "Firebase Auth"]

@@ -1,0 +1,16 @@
+{
+  "skills": "Web development skills",
+  "aboutme_menu": "ABOUT ME",
+  "skills_menu": "SKILLS",
+  "projects_menu": "PROJECTS",
+  "details_project": "PROJECT DETAILS",
+  "contact": "CONTACT",
+  "contact_desc": [
+    "You can contact me by",
+    "or if you prefer with the following form:"
+  ],
+  "contact_form": ["Your Email", "Your message"],
+  "contact_button": "Send",
+  "contact_msg": "Message sent, I will contact you shortly, thank you :)",
+  "loading": "Loading"
+}
