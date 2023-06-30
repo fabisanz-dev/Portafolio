@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { ExternalLinkIcon, LinkIcon } from '@heroicons/react/solid'
 import placeHolderImg from '../placeholder_image.png'
 import parse from 'html-react-parser'
+import { useTranslation } from 'react-i18next'
 
 const Proyecto = ({ proyecto }) => {
   const { name, description, image, details, tags } = proyecto
@@ -14,6 +15,7 @@ const Proyecto = ({ proyecto }) => {
     tags: collectionTags
   } = usePortafolio()
   const [imageStatus, setImageStatus] = useState('cargando')
+  const { t } = useTranslation()
 
   const handleImgLoaded = () => {
     setImageStatus('loaded')
@@ -62,7 +64,7 @@ const Proyecto = ({ proyecto }) => {
                     onClick={() => handleModalProyectos(details, proyecto)}
                     className='font-bold text-blue-pastel-300'
                   >
-                    Ver más{' '}
+                    {t('see_more')}{' '}
                   </a>
                 </>
               )}

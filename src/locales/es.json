@@ -12,5 +12,6 @@
   "contact_form": ["Tu Correo", "Tu Mensaje"],
   "contact_button": "Enviar",
   "contact_msg": "Mensaje enviado!, en breve me contactaré con usted, gracias :)",
-  "loading": "Cargando"
+  "loading": "Cargando",
+  "see_more": "Ver más..."
 }
