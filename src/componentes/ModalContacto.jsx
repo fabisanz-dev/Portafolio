@@ -119,7 +119,6 @@ export default function ModalContacto() {
         if (result.text === 'OK') {
           setLoading(false)
           setEmailSended(result.text)
-          //reset
           reset()
         }
       },

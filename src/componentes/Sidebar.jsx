@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Dropdown } from 'flowbite-react'
 import { NavLink } from 'react-router-dom'
 import { Avatar } from 'modern-react-avatar'
+import { GlobeAltIcon } from '@heroicons/react/solid'
 import 'modern-react-avatar/dist/index.css'
 import { useTranslation } from 'react-i18next'
 import i18n from '../i18n'
@@ -78,10 +79,10 @@ const Sidebar = () => {
       <div className='absolute top-0 left-0 p-2'>
         <select
           onChange={e => changeLanguage(e.target.value)}
-          className='px-1 py-0.5 text-pastel-300 outline-none'
+          className='outline-none text-sm font-medium p-2 text-white rounded border border-blue-pastel-100 bg-blue-pastel-200 hover:bg-blue-pastel-300'
         >
-          <option value='es'>Español</option>
-          <option value='en'>English</option>
+          <option value='es'>Es</option>
+          <option value='en'>En</option>
         </select>
       </div>
     </aside>
