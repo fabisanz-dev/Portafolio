@@ -27,7 +27,7 @@ const Home = () => {
               {profile.name?.substring(13)}
             </span>
           </h5>
-          <p className='font-normal font-mono text-blue-pastel-200 dark:text-gray-400 whitespace-pre-wrap md:text-normal md:text-normal text-mono text-sm text-center'>
+          <p className='font-normal font-mono text-slate-600 whitespace-pre-wrap text-base text-mono text-center'>
             {profile.about}
           </p>
           <div className='flex justify-center'>

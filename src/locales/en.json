@@ -13,5 +13,6 @@
   "contact_button": "Send",
   "contact_msg": "Message sent, I will contact you shortly, thank you :)",
   "loading": "Loading",
-  "see_more": "See more..."
+  "see_more": "See more...",
+  "tags_filter": "Filters with"
 }

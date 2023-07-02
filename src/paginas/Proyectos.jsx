@@ -4,6 +4,7 @@ import Proyecto from '../componentes/proyecto'
 import { Pagination } from 'flowbite-react'
 import { useEffect, useState } from 'react'
 import { BackspaceIcon } from '@heroicons/react/solid'
+import { useTranslation } from 'react-i18next'
 
 const Proyectos = () => {
   const {
@@ -23,6 +24,8 @@ const Proyectos = () => {
   const limit = page * ITEMS_PER_PAGE
   const from = limit - ITEMS_PER_PAGE
   const [items, setItems] = useState([])
+  //translation
+  const { t } = useTranslation()
 
   useEffect(() => {
     const changePage = () => {
@@ -64,7 +67,7 @@ const Proyectos = () => {
       {tags.length > 0 && (
         <div className='flex sm:justify-between flex-col p-1 items-center'>
           <h3 className='text-lg font-bold flex'>
-            Filtros con #Tags
+            {t('tags_filter')} #Tags
             <span>
               <a href='#' onClick={handleTitleTag} className=''>
                 <BackspaceIcon className='h-6 w-6 text-red-700 hover:text-red-800' />

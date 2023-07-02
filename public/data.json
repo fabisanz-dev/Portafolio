@@ -11,7 +11,7 @@
       {
         "id": 0,
         "name": "Pigmeo Mern",
-        "description": "Webapp móvil de una billetera virtual para gestión de finanzas y transacciones.\nProyecto grupal realizado en la organización: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
+        "description": "Webapp móvil de una billetera virtual para gestión de finanzas y transacciones.\nProyecto grupal realizado en: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
         "image": "https://img.youtube.com/vi/UJ5vFleryLM/hqdefault.jpg",
         "details": true,
         "details_image": [
@@ -27,7 +27,7 @@
       {
         "id": 1,
         "name": "Consultorio Mern",
-        "description": "Sistema web para gestionar turnos de medicos y pacientes.\nProyecto grupal realizado en la organización: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
+        "description": "Sistema web para gestionar turnos de medicos y pacientes.\nProyecto grupal realizado en: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
         "image": "https://media.discordapp.net/attachments/1089874433637888030/1098988014845317120/Home.jpg",
         "details": true,
         "details_image": [
