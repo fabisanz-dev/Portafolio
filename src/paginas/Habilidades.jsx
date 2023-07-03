@@ -60,14 +60,14 @@ const Habilidades = () => {
           </Container>
           <hr className='border border-blue-pastel-100 w-full my-2' />
           <Container>
-            <Badge>Base de datos</Badge>
+            <Badge>DB</Badge>
             {dataTools_3.map(({ link, src, alt }) => (
               <LogoTools link={link} src={src} alt={alt} key={alt} />
             ))}
           </Container>
           <hr className='border border-blue-pastel-100 w-full my-2' />
           <Container>
-            <Badge>Otros</Badge>
+            <Badge>+</Badge>
             {dataTools_4.map(({ link, src, alt }) => (
               <LogoTools link={link} src={src} alt={alt} key={alt} />
             ))}

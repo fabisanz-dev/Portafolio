@@ -18,7 +18,7 @@
     "projects": [
       {
         "id": 0,
-        "name": "Pigmeo Mern",
+        "name": "Mern Pigmeo",
         "description": "Mobile webapp of a virtual wallet for financial and transaction management.\nGroup project carried out in: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
         "image": "https://img.youtube.com/vi/UJ5vFleryLM/hqdefault.jpg",
         "details": true,
@@ -34,7 +34,7 @@
       },
       {
         "id": 1,
-        "name": "Consultorio Mern",
+        "name": "Mern Medical Office",
         "description": "Web-based appointment management system with physicians and patients.\nGroup project carried out in: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
         "image": "https://media.discordapp.net/attachments/1089874433637888030/1098988014845317120/Home.jpg",
         "details": true,
