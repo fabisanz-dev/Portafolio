@@ -101,14 +101,15 @@ const Proyectos = () => {
           {/*** Paginacion ***/}
           <div className='flex flex-col items-center justify-center m-auto'>
             <span className='text-sm text-gray-700'>
-              Pagina{' '}
-              <span className='font-semibold text-gray-900 '>{page}</span> de{' '}
+              {t('pagination.0')}{' '}
+              <span className='font-semibold text-gray-900 '>{page}</span>{' '}
+              {t('pagination.1')}{' '}
               <span className='font-semibold text-gray-900'>{pageCount}</span> -
-              Total:{' '}
+              {t('pagination.2')}:{' '}
               <span className='font-semibold text-gray-900'>
                 {proyectos.length}
               </span>{' '}
-              Proyectos
+              {t('pagination.3')}
             </span>
             <div className='inline-flex mt-2 xs:mt-0'>
               <button

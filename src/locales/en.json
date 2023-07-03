@@ -14,5 +14,6 @@
   "contact_msg": "Message sent, I will contact you shortly, thank you :)",
   "loading": "Loading",
   "see_more": "See more...",
-  "tags_filter": "Filters with"
+  "tags_filter": "Filters with",
+  "pagination": ["Page", "of", "Total", "Projects"]
 }
