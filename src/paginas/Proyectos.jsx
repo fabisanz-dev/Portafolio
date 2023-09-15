@@ -93,59 +93,61 @@ const Proyectos = () => {
       )}
 
       {proyectos.length > 0 && !cargando ? (
-        <div className='flex flex-col gap-4 items-start'>
+        <div className='flex flex-col gap-4 items-start h-full'>
           {items.map((proyecto, i) => (
             <Proyecto key={proyecto.id} proyecto={proyecto} />
           ))}
           <hr className='border border-blue-pastel-100 w-full' />
           {/*** Paginacion ***/}
-          <div className='flex flex-col items-center justify-center m-auto'>
-            <span className='text-sm text-gray-700'>
-              {t('pagination.0')}{' '}
-              <span className='font-semibold text-gray-900 '>{page}</span>{' '}
-              {t('pagination.1')}{' '}
-              <span className='font-semibold text-gray-900'>{pageCount}</span> -
-              {t('pagination.2')}:{' '}
-              <span className='font-semibold text-gray-900'>
-                {proyectos.length}
-              </span>{' '}
-              {t('pagination.3')}
-            </span>
-            <div className='inline-flex mt-2 xs:mt-0'>
-              <button
-                className={`py-2 px-4 text-sm font-medium text-white rounded-l border-blue-pastel-300 bg-blue-pastel-300 hover:bg-blue-pastel-200 
+          <div className='flex m-auto h-full'>
+            <div className='flex flex-col items-center justify-center mt-auto'>
+              <span className='text-sm text-gray-700'>
+                {t('pagination.0')}{' '}
+                <span className='font-semibold text-gray-900 '>{page}</span>{' '}
+                {t('pagination.1')}{' '}
+                <span className='font-semibold text-gray-900'>{pageCount}</span>{' '}
+                -{t('pagination.2')}:{' '}
+                <span className='font-semibold text-gray-900'>
+                  {proyectos.length}
+                </span>{' '}
+                {t('pagination.3')}
+              </span>
+              <div className='inline-flex mt-2 xs:mt-0'>
+                <button
+                  className={`py-2 px-4 text-sm font-medium text-white rounded-l border-blue-pastel-300 bg-blue-pastel-300 hover:bg-blue-pastel-200 
                 ${page === 1 && 'opacity-25'}`}
-                onClick={handlePrevious}
-                disabled={page === 1}
-              >
-                <span className='text-xl font-bold'>{'<'}</span>
-              </button>
+                  onClick={handlePrevious}
+                  disabled={page === 1}
+                >
+                  <span className='text-xl font-bold'>{'<'}</span>
+                </button>
 
-              {/**Selector */}
-              <select
-                value={page}
-                onChange={event => {
-                  setPage(Number(event.target.value))
-                }}
-                className='ml-1 text-sm font-medium p-1 text-white 
+                {/**Selector */}
+                <select
+                  value={page}
+                  onChange={event => {
+                    setPage(Number(event.target.value))
+                  }}
+                  className='ml-1 text-sm font-medium p-1 text-white 
                   rounded border-0 border-l border-blue-pastel-300 bg-blue-pastel-300 hover:bg-blue-pastel-200'
-              >
-                {Array(pageCount)
-                  .fill(null)
-                  .map((_, index) => {
-                    return <option key={index}>{index + 1}</option>
-                  })}
-              </select>
+                >
+                  {Array(pageCount)
+                    .fill(null)
+                    .map((_, index) => {
+                      return <option key={index}>{index + 1}</option>
+                    })}
+                </select>
 
-              <button
-                className={`ml-1 py-2 px-4 text-sm font-medium text-white 
+                <button
+                  className={`ml-1 py-2 px-4 text-sm font-medium text-white 
            rounded-r border-0 border-l border-blue-pastel-300 bg-blue-pastel-300 hover:bg-blue-pastel-200 
            ${page === pageCount && 'opacity-25'}`}
-                disabled={page === pageCount}
-                onClick={handleNext}
-              >
-                <span className='text-xl font-bold'>{'>'}</span>
-              </button>
+                  disabled={page === pageCount}
+                  onClick={handleNext}
+                >
+                  <span className='text-xl font-bold'>{'>'}</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
