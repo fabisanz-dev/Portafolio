@@ -18,6 +18,11 @@ const dataTools_1 = [
     link: 'https://laravel.com/',
     src: 'https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg',
     alt: 'laravel'
+  },
+  {
+    link: 'https://nestjs.com/',
+    src: 'https://www.vectorlogo.zone/logos/nestjs/nestjs-icon.svg',
+    alt: 'nestjs'
   }
 ]
 

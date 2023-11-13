@@ -10,6 +10,22 @@
     "projects": [
       {
         "id": 0,
+        "name": "Meli Clon Social",
+        "description": "Clon parcial de mercado libre con funcionalidades sociales: seguimiento de usuarios, visualización de likes y reseñas de seguidores.\nProyecto grupal realizado en: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
+        "image": "https://res.cloudinary.com/dgsrbbfma/image/upload/v1690506637/No-country-s9/2023-07-27_22_08_40-Redise%C3%B1o_de_Mercado_Libre_-_YouTube_-_Brave_x3wgol.png",
+        "details": true,
+        "details_image": [
+          {
+            "image": "https://www.youtube.com/embed/RALokRBqiHY",
+            "title": "Video-promocional",
+            "description": "Video promocional"
+          }
+        ],
+        "tags": ["NestJs", "NextJs", "TaildWindCss", "MongoDb"],
+        "link": "https://github.com/No-Country/s9-11-t-next-express"
+      },
+      {
+        "id": 1,
         "name": "Pigmeo Mern",
         "description": "Webapp móvil de una billetera virtual para gestión de finanzas y transacciones.\nProyecto grupal realizado en: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
         "image": "https://img.youtube.com/vi/UJ5vFleryLM/hqdefault.jpg",
@@ -25,7 +41,7 @@
         "link": "https://github.com/No-Country/s8-14-t-mern"
       },
       {
-        "id": 1,
+        "id": 2,
         "name": "Consultorio Mern",
         "description": "Sistema web para gestionar turnos de medicos y pacientes.\nProyecto grupal realizado en: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
         "image": "https://media.discordapp.net/attachments/1089874433637888030/1098988014845317120/Home.jpg",
@@ -41,7 +57,7 @@
         "link": "https://github.com/No-Country/C10-G42"
       },
       {
-        "id": 2,
+        "id": 3,
         "name": "UpTask",
         "description": "Aplicación para gestionar proyectos y tareas con adición de colaboradores registrados, incluyendo: \nregistro/login con confirmación de correo, paginación, buscador, actuaización de imagen de perfil, etc... \nEs un proyecto a modo práctico basado en el curso de React de Juan Pablo De la torre Valdez en Udemy.",
         "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658260058/My_jobs/F_sanz/mern_uptask/2022-07-19_16_46_52-Uptask_-_inicio_resp.png",
@@ -82,7 +98,7 @@
         ]
       },
       {
-        "id": 3,
+        "id": 4,
         "name": "CodePlex",
         "description": "Proyecto de ventas multi-sucursal. Desarrolle y di soporte en algunos modulos, entre ellos: gestión de usuarios, registro y logueo, generación de reportes en formato: pdf, envio de correos para los reportes generados, etc...",
         "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658250239/My_jobs/F_sanz/rafael_l/formulario_ventas.png",
@@ -112,7 +128,7 @@
         "tags": ["PHP-Lumen", "Mysql", "Angular", "Bootstrap", "Firebase Auth"]
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Tienda virtual Angular",
         "description": "Proyecto de tienda virtual con fines prácticos.",
         "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1537910705/My_jobs/F_sanz/Angular/Tiendangfirebase.gif",
@@ -120,7 +136,7 @@
         "tags": ["Angular", "Firebase"]
       },
       {
-        "id": 5,
+        "id": 6,
         "name": "LexRay",
         "description": "PLataforma de operaciones moviles. Desarrollo y soporte de algunos modulos de usuario y localizaciones.",
         "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658375828/My_jobs/F_sanz/santiago_a/2019-03-18_10_22_06-LexRay_Admin.png",
@@ -145,7 +161,7 @@
         "tags": ["NodeJs-Express", "MongoDb", "Angular", "Ionic", "ElectronJs"]
       },
       {
-        "id": 6,
+        "id": 7,
         "name": "FElectronica",
         "description": "Maquetado inicial de la aplicación, con menú multinivel, gestión de usuarios y de roles respectivos.",
         "image": "https://drive.google.com/uc?id=17OW2gEj4KpVt7KCTbQuuC19bkSodBUU7",

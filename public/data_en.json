@@ -18,6 +18,22 @@
     "projects": [
       {
         "id": 0,
+        "name": "Meli Clon Social",
+        "description": "Partial clone of Mercado Libre with social features: user tracking, likes display and follower reviews.\nGroup project carried out in: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
+        "image": "https://res.cloudinary.com/dgsrbbfma/image/upload/v1690506637/No-country-s9/2023-07-27_22_08_40-Redise%C3%B1o_de_Mercado_Libre_-_YouTube_-_Brave_x3wgol.png",
+        "details": true,
+        "details_image": [
+          {
+            "image": "https://www.youtube.com/embed/RALokRBqiHY",
+            "title": "Video-promotional",
+            "description": "Promotional video"
+          }
+        ],
+        "tags": ["NestJs", "NextJs", "TaildWindCss", "MongoDb"],
+        "link": "https://github.com/No-Country/s9-11-t-next-express"
+      },
+      {
+        "id": 1,
         "name": "Mern Pigmeo",
         "description": "Mobile webapp of a virtual wallet for financial and transaction management.\nGroup project carried out in: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
         "image": "https://img.youtube.com/vi/UJ5vFleryLM/hqdefault.jpg",
@@ -33,7 +49,7 @@
         "link": "https://github.com/No-Country/s8-14-t-mern"
       },
       {
-        "id": 1,
+        "id": 2,
         "name": "Mern Medical Office",
         "description": "Web-based appointment management system with physicians and patients.\nGroup project carried out in: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
         "image": "https://media.discordapp.net/attachments/1089874433637888030/1098988014845317120/Home.jpg",
@@ -49,7 +65,7 @@
         "link": "https://github.com/No-Country/C10-G42"
       },
       {
-        "id": 2,
+        "id": 3,
         "name": "UpTask",
         "description": "Application to manage projects and tasks with addition of registered collaborators, including: \nregistration/login with mail confirmation, pagination, search engine, profile image update, etc... \nThis is a practical project based on Juan Pablo De la torre Valdez's React course on Udemy.",
         "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658260058/My_jobs/F_sanz/mern_uptask/2022-07-19_16_46_52-Uptask_-_inicio_resp.png",
@@ -90,7 +106,7 @@
         ]
       },
       {
-        "id": 3,
+        "id": 4,
         "name": "CodePlex",
         "description": "Multi-branch sales project. I developed and gave support in some modules, among them: user management, registration and login, report generation in pdf format, sending emails for the generated reports, etc...",
         "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658250239/My_jobs/F_sanz/rafael_l/formulario_ventas.png",
@@ -120,7 +136,7 @@
         "tags": ["PHP-Lumen", "Mysql", "Angular", "Bootstrap", "Firebase Auth"]
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Angular online store",
         "description": "Virtual store project for practical purposes.",
         "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1537910705/My_jobs/F_sanz/Angular/Tiendangfirebase.gif",
@@ -128,7 +144,7 @@
         "tags": ["Angular", "Firebase"]
       },
       {
-        "id": 5,
+        "id": 6,
         "name": "LexRay",
         "description": "Mobile operations platform. Development and support of some user modules and localizations.",
         "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1658375828/My_jobs/F_sanz/santiago_a/2019-03-18_10_22_06-LexRay_Admin.png",
@@ -153,7 +169,7 @@
         "tags": ["NodeJs-Express", "MongoDb", "Angular", "Ionic", "ElectronJs"]
       },
       {
-        "id": 6,
+        "id": 7,
         "name": "FElectronica",
         "description": "Initial layout of the application, with multilevel menu, user management and respective roles.",
         "image": "https://drive.google.com/uc?id=17OW2gEj4KpVt7KCTbQuuC19bkSodBUU7",
