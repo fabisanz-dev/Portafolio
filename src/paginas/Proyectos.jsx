@@ -63,7 +63,8 @@ const Proyectos = () => {
   }
 
   return (
-    <>
+    <div className='flex flex-col h-full'>
+      {/* TAGS FILTER */}
       {tags.length > 0 && (
         <div className='flex sm:justify-between flex-col p-1 items-center'>
           <h3 className='text-lg font-bold flex'>
@@ -93,7 +94,7 @@ const Proyectos = () => {
       )}
 
       {proyectos.length > 0 && !cargando ? (
-        <div className='flex flex-col gap-4 items-start h-full'>
+        <div className='flex flex-col gap-4 h-full'>
           {items.map((proyecto, i) => (
             <Proyecto key={proyecto.id} proyecto={proyecto} />
           ))}
@@ -174,7 +175,7 @@ const Proyectos = () => {
       )}
 
       <ModalProyectos />
-    </>
+    </div>
   )
 }
 
