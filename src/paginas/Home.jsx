@@ -34,11 +34,15 @@ const Home = () => {
             <a
               href='https://storyset.com/work'
               target='_blank'
-              className='w-1/2 h-3/4'
+              className='w-1/2 h-3/4 cursor-default'
+              rel='noopener noreferrer'
             >
-              <Tooltip content='Storyset - www.freepik.es' placement='bottom'>
-                <img src={imgPresentacion} alt='img-presentacion' />
-              </Tooltip>
+              <img
+                src={imgPresentacion}
+                alt='img-presentacion'
+                title='Fuente de imagen: Storyset - www.freepik.es'
+                origin='https://storyset.com/work'
+              />
             </a>
           </div>
 
@@ -57,7 +61,7 @@ const Home = () => {
                 </a>
               </span>
               <span className='uppercase text-xs py-1 font-mono'>
-                <p>&copy; 2023 FJS</p>
+                <p>&copy; {new Date().getFullYear()} FJS</p>
               </span>
               <span
                 className=' cursor-pointer'

@@ -44,7 +44,7 @@
         "id": 2,
         "name": "Consultorio Mern",
         "description": "Sistema web para gestionar turnos de medicos y pacientes.\nProyecto grupal realizado en: <a href='https://www.nocountry.tech/' target='_blank' class='font-medium text-blue-pastel-300 hover:underline'>No-country</a><b>.",
-        "image": "https://media.discordapp.net/attachments/1089874433637888030/1098988014845317120/Home.jpg",
+        "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1746142100/developer/2025-05-01_20_25_12-Window_mern_consultorio.png",
         "details": true,
         "details_image": [
           {
@@ -164,7 +164,7 @@
         "id": 7,
         "name": "FElectronica",
         "description": "Maquetado inicial de la aplicación, con menú multinivel, gestión de usuarios y de roles respectivos.",
-        "image": "https://drive.google.com/uc?id=17OW2gEj4KpVt7KCTbQuuC19bkSodBUU7",
+        "image": "https://res.cloudinary.com/dftu7s8cf/image/upload/v1746142773/developer/felectronica_usuarios_roles.gif",
         "details": false,
         "tags": ["Angular", "Firebase Auth"]
       }
